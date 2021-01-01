@@ -1,0 +1,15 @@
+1. create a project = django-admin startapp aap name
+2. create a app     = python manage.py runserver
+3. url 
+xredwap.com
+4. views
+5. Templates
+6. STATICFILES      = os.path.join(BASE_DIR, 'folder name where the file')
+7. STATIC_ROOT      = os.path.join(BASE_DIR, 'folder name') # collect the all folder css , java,html
+8. Jinjha code      = {% load staic%}
+						
+9. load image		= {% static 'images' as baseUrl %} 
+10. connect with data base  =  
+
+
+86998-24102

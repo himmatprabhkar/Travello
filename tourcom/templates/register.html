@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+		<form action="register" method="POST">
+		{% csrf_token %}
+
+			<input type="text" name="first_name" placeholder="first name"><br>
+			<input type="text" name="last_name" placeholder="last name"><br>
+			<input type="text" name="username" placeholder="username"><br>
+			<input type="email" name="email" placeholder="email"><br>
+			<input type="password" name="password1" placeholder="password"><br>
+			<input type="password" name="password2" placeholder="confrm password"><br>
+			<input type="submit" name="sumbit">
+		</form>
+		<div> 
+			{% for message in messages%}
+			{{message}}
+			{% endfor %}
+		</div>
+ </body>
+</html>
